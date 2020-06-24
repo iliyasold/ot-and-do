@@ -1,0 +1,51 @@
+html { box-sizing: border-box; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: 'Muller', sans-serif;
+  color: #272727;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a, button {
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out;
+}
+
+a:hover,
+button:hover { opacity: 0.87; }
+
+button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+img { max-width: 100%; }
+
+input { color: #272727; }

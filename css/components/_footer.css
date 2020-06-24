@@ -1,0 +1,36 @@
+.footer {
+  margin-top: 50px;
+  font-size: 14px;
+  color: darkgray;
+  background-color: #f4f8fb;
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: row;
+  padding-top:  12px;
+  padding-bottom:  12px;
+
+}
+
+/* Choice Color */
+.footer__list {
+  margin-right: auto;
+  padding-top: 2px;
+}
+
+.footer__item {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+}
+
+.footer__item:first-child { background-color: dodgerblue; }
+.footer__item:nth-child(2){ background-color: grey; }
+.footer__item:nth-child(3) { background-color: crimson; }
+.footer__item:last-child { background-color: lightseagreen; }
+
+.footer__item:hover { cursor: pointer; }
+
+.footer__item:not(:last-child) { margin-right: 10px; }

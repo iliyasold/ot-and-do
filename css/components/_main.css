@@ -1,0 +1,64 @@
+.main { padding-top: 50px; }
+
+/* New Task */
+.main__title { color: dodgerblue; }
+
+.main__form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.main__input {
+  position: relative;
+  margin-left: auto;
+  width: calc(100% - 320px);
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 12px;
+  border: dodgerblue 2px solid;
+  outline: none;
+}
+
+.main__input:focus {
+  color: #fff;
+  background-color: #252525;
+  border: 2px solid #252525;
+}
+
+.main__input:focus::placeholder {
+  position: absolute;
+  right: 0;
+  text-transform: lowercase;
+  color: #ccc;
+  transform: translateX(calc(100% - 217px));
+  transition: 0.5s;
+}
+
+.main__btn {
+  padding-top: 14px;
+  padding-right: 30px;
+  padding-bottom: 14px;
+  padding-left: 30px;
+  color: #fff;
+  font-size: 16px;
+  font-family: 'MullerMedium', sans-serif;
+  border-radius: 0 13px 13px 0;
+  background-color: dodgerblue;
+}
+
+/* To-Do List */
+.main__list {
+  margin-top: 30px;
+  padding-left: 20px;
+}
+
+.main__item {
+  padding-bottom: 4px;
+  border-bottom: 1px dotted #d9d9d9;
+}
+
+.main__item:not(:first-child) { padding-top: 10px; }
+
+.main__item:not(:last-child) { margin-bottom: 10px; }
